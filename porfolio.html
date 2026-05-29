@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Porfolio — Micaela Nuñez</title>
+  <link rel="stylesheet" href="estilos.css">
+  <style>
+    .porfolio-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      max-width: 1223px;
+      margin: 60px auto;
+      padding: 0 60px;
+      border-left: 1px solid black;
+    }
+    .porfolio-grid article {
+      border-top: 1px solid black;
+      padding: 60px 66px 76px 66px;
+    }
+    .porfolio-grid article:nth-child(odd) {
+      border-right: 1px solid black;
+    }
+    .category-name {
+      font-family: 'DM Serif Display', serif;
+      font-style: italic;
+      font-size: 46px;
+      color: var(--gray-dark);
+      line-height: 1;
+      margin-bottom: 12px;
+    }
+    .category-sub {
+      font-size: 14px;
+      color: var(--gray-lighter);
+      line-height: 1.8;
+      margin-bottom: 12px;
+    }
+    .category-link {
+      color: var(--purple);
+      font-size: 14px;
+      text-decoration: none;
+      font-family: 'DM Mono', monospace;
+    }
+    .category-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="sobre-mi.html">Sobre mi</a></li>
+        <li><a href="porfolio.html">Porfolio</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="star">✹</div>
+      <h1>Porfolio</h1>
+      <p class="subtitle">Diseñadora gráfica &amp; Ilustradora - Buenos Aires, Argentina</p>
+    </section>
+
+    <div class="ticker-wrap">
+      <span class="ticker-text">
+        branding · editorial · afiches · identidad visual · diseño gráfico · hecho en argentina ·
+        branding · editorial · afiches · identidad visual · diseño gráfico · hecho en argentina ·
+        branding · editorial · afiches · identidad visual · diseño gráfico · hecho en argentina ·
+      </span>
+    </div>
+
+    <section aria-label="Categorías de portfolio">
+      <ul class="porfolio-grid">
+        <li>
+          <article>
+            <div class="category-name">branding</div>
+            <div class="category-sub">Identidad visual .<br>Festival de Cine "Fulgor"</div>
+            <a href="branding.html" class="category-link">Ver Proyecto</a>
+          </article>
+        </li>
+        <li>
+          <article>
+            <div class="category-name">editorial</div>
+            <div class="category-sub">Identidad visual .<br>Festival de Cine "Fulgor"</div>
+            <a href="editorial.html" class="category-link">Ver Proyecto</a>
+          </article>
+        </li>
+        <li>
+          <article>
+            <div class="category-name">afiches</div>
+            <div class="category-sub">Identidad visual .<br>Festival de Cine "Fulgor"</div>
+            <a href="afiches.html" class="category-link">Ver Proyecto</a>
+          </article>
+        </li>
+        <li>
+          <article>
+            <div class="category-name">ilustración</div>
+            <div class="category-sub">Identidad visual .<br>Festival de Cine "Fulgor"</div>
+            <a href="ilustracion.html" class="category-link">Ver Proyecto</a>
+          </article>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="star-sm">✹</div>
+        <div class="name">Micaela<br>Nuñez</div>
+        <div class="tagline">Diseño &amp; Comunicación visual</div>
+      </div>
+      <nav class="footer-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="sobre-mi.html">Sobre mi</a></li>
+          <li><a href="porfolio.html">Porfolio</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+      <div class="footer-social">
+        <a href="#" aria-label="Instagram">&#9632;</a>
+        <a href="#" aria-label="Behance">&#9632;</a>
+        <a href="#" aria-label="LinkedIn">&#9632;</a>
+      </div>
+    </div>
+    <p class="footer-copy">Cátedra Wischñevsky - 2026</p>
+  </footer>
+
+</body>
+</html>
