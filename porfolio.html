@@ -4,8 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✹</text></svg>">
-  <title>Porfolio — Micaela Nuñez</title>
+  <title>Ilustración — Micaela Nuñez</title>
   <link rel="stylesheet" href="estilos.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
 </head>
 <body>
 
@@ -32,57 +33,43 @@
   <!-- encabezado -->
   <div class="encabezado-pagina aparecer">
     <span class="star">✹</span>
-    <h1>Porfolio</h1>
+    <h1>Ilustración</h1>
     <p class="subtitle">Diseñadora gráfica &amp; Ilustradora — Buenos Aires, Argentina</p>
   </div>
 
   <!-- scrolling text -->
   <div class="ticker-wrap">
     <span class="ticker-text">
-     branding · editorial · afiches · identidad visual · diseño gráfico · hecho en argentina ·
+      branding · editorial · afiches · identidad visual · diseño gráfico · hecho en argentina ·
     branding · editorial · afiches · identidad visual · diseño gráfico · hecho en argentina ·
     branding · editorial · afiches · identidad visual · diseño gráfico · hecho en argentina ·
     branding · editorial · afiches · identidad visual · diseño gráfico · hecho en argentina ·
     </span>
   </div>
 
-  <!-- categorias -->
+  <!-- proyectos -->
   <main>
-    <ul class="categorias-grid">
 
-      <li>
-        <a href="branding.html" class="categoria-celda aparecer-2">
-          <p class="categoria-nombre-grid">branding</p>
-          <p class="categoria-detalle">Identidad visual<br>Festival de Cine "Fulgor"</p>
-          <span class="categoria-ver">Ver Proyecto</span>
-        </a>
-      </li>
+    <div class="proyecto aparecer-2">
+      <div class="proyecto-fila">
+        <div class="proyecto-texto">
+          <p class="proyecto-bullet">● Serie "Si las Chusmas fueran Flores Mi Barrio es un Jardín" (2017)</p>
+          <hr class="divider">
+          <p class="proyecto-desc">Collage Digital Serie — "Si las Chusmas fueran Flores Mi Barrio es un Jardín" (2018). Para esta serie me inspiré en la canción "Que Blanco Que Soy" de Damas Gratis y en el barrio donde crecí, el cual está presente en la primer imagen.</p>
+        </div>
+        <div class="proyecto-imagenes">
+          <div class="proyecto-imgs grid-2">
+            <a href="img/ilustracion_1.jpg" class="glightbox" data-gallery="ilustracion">
+              <img src="img/ilustracion_1.jpg" alt="Ilustración 1">
+            </a>
+            <a href="img/ilustracion_2.jpg" class="glightbox" data-gallery="ilustracion">
+              <img src="img/ilustracion_2.jpg" alt="Ilustración 2">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
 
-      <li>
-        <a href="editorial.html" class="categoria-celda aparecer-2">
-          <p class="categoria-nombre-grid">editorial</p>
-          <p class="categoria-detalle">Aves de Ciudad · Bookzine<br>Programa · Fanzine</p>
-          <span class="categoria-ver">Ver Proyecto</span>
-        </a>
-      </li>
-
-      <li>
-        <a href="afiches.html" class="categoria-celda aparecer-3">
-          <p class="categoria-nombre-grid">afiches</p>
-          <p class="categoria-detalle">Steps · Encuentro · Urge</p>
-          <span class="categoria-ver">Ver Proyecto</span>
-        </a>
-      </li>
-
-      <li>
-        <a href="ilustracion.html" class="categoria-celda aparecer-3">
-          <p class="categoria-nombre-grid">ilustración</p>
-          <p class="categoria-detalle">Serie "Si las Chusmas fueran<br>Flores Mi Barrio es un Jardín"</p>
-          <span class="categoria-ver">Ver Proyecto</span>
-        </a>
-      </li>
-
-    </ul>
   </main>
 
   <!-- footer -->
@@ -101,7 +88,7 @@
           <li><a href="contacto.html">Contacto</a></li>
         </ul>
       </nav>
-      <div class="footer-social">
+     <div class="footer-social">
   <a href="https://www.linkedin.com/" target="_blank" aria-label="LinkedIn">
     <img src="img/iconos/linkedin.svg" alt="LinkedIn">
   </a>
@@ -113,9 +100,13 @@
   </a>
 </div>
     </div>
-    </div>
     <p class="footer-copy">Cátedra Wischñevsky — 2026</p>
   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+  <script>
+    const lightbox = GLightbox({ selector: '.glightbox' });
+  </script>
 
 </body>
 </html>
