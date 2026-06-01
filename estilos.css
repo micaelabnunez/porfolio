@@ -5,14 +5,16 @@
 /* tipos */
 @font-face {
   font-family: 'RST Reactor';
-  src: url('font/RST Reactor - regular italic.otf') format('opentype');
+  src: url('font/RST Reactor - Regular Italic.otf') format('opentype');
 }
 
+/*
+ Esta no va 
 @font-face {
   font-family: 'RST Reactor Italic';
   src: url('font/RST\ Reactor\ -\ Regular\ Italic.otf Italic.otf') format('opentype');
 }
-
+*/
 /* configuraciones generales */
 * {
   margin: 0;
@@ -495,7 +497,7 @@ nav ul li a.activo::after {
 
 .proyecto-imgs img {
   max-width: 100%;
-  height: 0px;
+  height: auto;
   object-fit: cover;
   display: block;
   transition: transform 0.3s ease;
