@@ -1,64 +1,53 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Micaela Nuñez — Portfolio</title>
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✹</text></svg>">
+  <title>Micaela Nuñez — Diseño &amp; Comunicación Visual</title>
   <link rel="stylesheet" href="estilos.css">
-  <style>
-    .hero-section {
-      margin: 100px;
-      padding: 150px 0 0 30px;
-      
-    }
-    .hero-hola {
-      font-family: 'DM Mono', monospace;
-      font-style: italic;
-      font-size: 120px;
-      font-weight: 400;
-      color: black;
-      line-height: 1;
-      display: inline-flex;
-      align-items: center;
-      gap: 20px;
-    }
-    .hero-hola .asterisk {
-      font-family: 'DM Serif Display', serif;
-      font-style: italic;
-      font-size: 100px;
-      color: black;
-    }
-  </style>
 </head>
+
 <body>
- 
+
+  <!-- nav -->
   <header>
     <nav>
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="sobre-mi.html">Sobre mi</a></li>
-        <li><a href="porfolio.html">Porfolio</a></li>
+        <li><a href="sobre-mi.html">Sobre mí</a></li>
+        <li class="nav-portfolio">
+          <a href="porfolio.html">Porfolio</a>
+          <div class="desplegable">
+            <a href="branding.html">Branding</a>
+            <a href="editorial.html">Editorial</a>
+            <a href="afiches.html">Afiches</a>
+            <a href="ilustracion.html">Ilustración</a>
+          </div>
+        </li>
         <li><a href="contacto.html">Contacto</a></li>
       </ul>
     </nav>
   </header>
- 
-  <main>
-    <section class="hero-section">
-      <div class="hero-hola">
-        ¡Hola! <span class="asterisk">✹</span>
-      </div>
-    </section>
- 
-    <div class="ticker-wrap">
-      <span class="ticker-text">
-        branding · editorial · afiches · identidad visual · diseño gráfico · hecho en argentina ·
-        branding · editorial · afiches · identidad visual · diseño gráfico · hecho en argentina ·
-        branding · editorial · afiches · identidad visual · diseño gráfico · hecho en argentina ·
-      </span>
-    </div>
-  </main>
- 
+
+  <!-- hero -->
+  <div class="page-hero aparecer">
+    <span class="star star-gira">✹</span>
+    <h1>¡Hola!</h1>
+  </div>
+
+  <!-- texto corrido -->
+  <div class="ticker-wrap">
+    <span class="ticker-text">
+      branding · editorial · afiches · identidad visual · diseño gráfico · hecho en argentina ·
+      branding · editorial · afiches · identidad visual · diseño gráfico · hecho en argentina ·
+      branding · editorial · afiches · identidad visual · diseño gráfico · hecho en argentina ·
+      branding · editorial · afiches · identidad visual · diseño gráfico · hecho en argentina ·
+    </span>
+  </div>
+
+  <!-- footer -->
   <footer>
     <div class="footer-inner">
       <div class="footer-brand">
@@ -69,19 +58,27 @@
       <nav class="footer-nav">
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="sobre-mi.html">Sobre mi</a></li>
+          <li><a href="sobre-mi.html">Sobre mí</a></li>
           <li><a href="porfolio.html">Porfolio</a></li>
           <li><a href="contacto.html">Contacto</a></li>
         </ul>
       </nav>
       <div class="footer-social">
-        <a href="#" aria-label="Instagram">&#9632;</a>
-        <a href="#" aria-label="Behance">&#9632;</a>
-        <a href="#" aria-label="LinkedIn">&#9632;</a>
+        <a href="https://www.linkedin.com/" target="_blank" aria-label="LinkedIn">
+          <img src="img/iconos/linkedin.svg" alt="LinkedIn">
+        </a>
+        <a href="https://www.behance.net/micaelabnz" target="_blank" aria-label="Behance">
+          <img src="img/iconos/behance.svg" alt="Behance">
+        </a>
+        <a href="https://www.instagram.com/xmicaelax_" target="_blank" aria-label="Instagram">
+          <img src="img/iconos/instagram.svg" alt="Instagram">
+        </a>
       </div>
     </div>
-    <p class="footer-copy">Cátedra Wischñevsky - 2026</p>
+    </div>
+    <p class="footer-copy">Cátedra Wischñevsky — 2026</p>
   </footer>
- 
+
 </body>
+
 </html>

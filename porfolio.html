@@ -3,111 +3,89 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✹</text></svg>">
   <title>Porfolio — Micaela Nuñez</title>
   <link rel="stylesheet" href="estilos.css">
-  <style>
-    .porfolio-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      max-width: 1223px;
-      margin: 60px auto;
-      padding: 0 60px;
-      border-left: 1px solid black;
-    }
-    .porfolio-grid article {
-      border-top: 1px solid black;
-      padding: 60px 66px 76px 66px;
-    }
-    .porfolio-grid article:nth-child(odd) {
-      border-right: 1px solid black;
-    }
-    .category-name {
-      font-family: 'DM Serif Display', serif;
-      font-style: italic;
-      font-size: 46px;
-      color: var(--gray-dark);
-      line-height: 1;
-      margin-bottom: 12px;
-    }
-    .category-sub {
-      font-size: 14px;
-      color: var(--gray-lighter);
-      line-height: 1.8;
-      margin-bottom: 12px;
-    }
-    .category-link {
-      color: var(--purple);
-      font-size: 14px;
-      text-decoration: none;
-      font-family: 'DM Mono', monospace;
-    }
-    .category-link:hover {
-      text-decoration: underline;
-    }
-  </style>
 </head>
 <body>
 
+  <!-- nav -->
   <header>
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="sobre-mi.html">Sobre mi</a></li>
-        <li><a href="porfolio.html">Porfolio</a></li>
+        <li><a href="sobre-mi.html">Sobre mí</a></li>
+        <li class="nav-portfolio">
+          <a href="porfolio.html" class="activo">Porfolio</a>
+          <div class="desplegable">
+            <a href="branding.html">Branding</a>
+            <a href="editorial.html">Editorial</a>
+            <a href="afiches.html">Afiches</a>
+            <a href="ilustracion.html">Ilustración</a>
+          </div>
+        </li>
         <li><a href="contacto.html">Contacto</a></li>
       </ul>
     </nav>
   </header>
 
+  <!-- encabezado -->
+  <div class="encabezado-pagina aparecer">
+    <span class="star">✹</span>
+    <h1>Porfolio</h1>
+    <p class="subtitle">Diseñadora gráfica &amp; Ilustradora — Buenos Aires, Argentina</p>
+  </div>
+
+  <!-- scrolling text -->
+  <div class="ticker-wrap">
+    <span class="ticker-text">
+     branding · editorial · afiches · identidad visual · diseño gráfico · hecho en argentina ·
+    branding · editorial · afiches · identidad visual · diseño gráfico · hecho en argentina ·
+    branding · editorial · afiches · identidad visual · diseño gráfico · hecho en argentina ·
+    branding · editorial · afiches · identidad visual · diseño gráfico · hecho en argentina ·
+    </span>
+  </div>
+
+  <!-- categorias -->
   <main>
-    <section class="page-hero">
-      <div class="star">✹</div>
-      <h1>Porfolio</h1>
-      <p class="subtitle">Diseñadora gráfica &amp; Ilustradora - Buenos Aires, Argentina</p>
-    </section>
+    <ul class="categorias-grid">
 
-    <div class="ticker-wrap">
-      <span class="ticker-text">
-        branding · editorial · afiches · identidad visual · diseño gráfico · hecho en argentina ·
-        branding · editorial · afiches · identidad visual · diseño gráfico · hecho en argentina ·
-        branding · editorial · afiches · identidad visual · diseño gráfico · hecho en argentina ·
-      </span>
-    </div>
+      <li>
+        <a href="branding.html" class="categoria-celda aparecer-2">
+          <p class="categoria-nombre-grid">branding</p>
+          <p class="categoria-detalle">Identidad visual<br>Festival de Cine "Fulgor"</p>
+          <span class="categoria-ver">Ver Proyecto</span>
+        </a>
+      </li>
 
-    <section aria-label="Categorías de portfolio">
-      <ul class="porfolio-grid">
-        <li>
-          <article>
-            <div class="category-name">branding</div>
-            <div class="category-sub">Identidad visual .<br>Festival de Cine "Fulgor"</div>
-            <a href="branding.html" class="category-link">Ver Proyecto</a>
-          </article>
-        </li>
-        <li>
-          <article>
-            <div class="category-name">editorial</div>
-            <div class="category-sub">Identidad visual .<br>Festival de Cine "Fulgor"</div>
-            <a href="editorial.html" class="category-link">Ver Proyecto</a>
-          </article>
-        </li>
-        <li>
-          <article>
-            <div class="category-name">afiches</div>
-            <div class="category-sub">Identidad visual .<br>Festival de Cine "Fulgor"</div>
-            <a href="afiches.html" class="category-link">Ver Proyecto</a>
-          </article>
-        </li>
-        <li>
-          <article>
-            <div class="category-name">ilustración</div>
-            <div class="category-sub">Identidad visual .<br>Festival de Cine "Fulgor"</div>
-            <a href="ilustracion.html" class="category-link">Ver Proyecto</a>
-          </article>
-        </li>
-      </ul>
-    </section>
+      <li>
+        <a href="editorial.html" class="categoria-celda aparecer-2">
+          <p class="categoria-nombre-grid">editorial</p>
+          <p class="categoria-detalle">Aves de Ciudad · Bookzine<br>Programa · Fanzine</p>
+          <span class="categoria-ver">Ver Proyecto</span>
+        </a>
+      </li>
+
+      <li>
+        <a href="afiches.html" class="categoria-celda aparecer-3">
+          <p class="categoria-nombre-grid">afiches</p>
+          <p class="categoria-detalle">Steps · Encuentro · Urge</p>
+          <span class="categoria-ver">Ver Proyecto</span>
+        </a>
+      </li>
+
+      <li>
+        <a href="ilustracion.html" class="categoria-celda aparecer-3">
+          <p class="categoria-nombre-grid">ilustración</p>
+          <p class="categoria-detalle">Serie "Si las Chusmas fueran<br>Flores Mi Barrio es un Jardín"</p>
+          <span class="categoria-ver">Ver Proyecto</span>
+        </a>
+      </li>
+
+    </ul>
   </main>
 
+  <!-- footer -->
   <footer>
     <div class="footer-inner">
       <div class="footer-brand">
@@ -118,18 +96,25 @@
       <nav class="footer-nav">
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="sobre-mi.html">Sobre mi</a></li>
+          <li><a href="sobre-mi.html">Sobre mí</a></li>
           <li><a href="porfolio.html">Porfolio</a></li>
           <li><a href="contacto.html">Contacto</a></li>
         </ul>
       </nav>
       <div class="footer-social">
-        <a href="#" aria-label="Instagram">&#9632;</a>
-        <a href="#" aria-label="Behance">&#9632;</a>
-        <a href="#" aria-label="LinkedIn">&#9632;</a>
-      </div>
+  <a href="https://www.linkedin.com/" target="_blank" aria-label="LinkedIn">
+    <img src="img/iconos/linkedin.svg" alt="LinkedIn">
+  </a>
+  <a href="https://www.behance.net/micaelabnz" target="_blank" aria-label="Behance">
+    <img src="img/iconos/behance.svg" alt="Behance">
+  </a>
+  <a href="https://www.instagram.com/xmicaelax_" target="_blank" aria-label="Instagram">
+    <img src="img/iconos/instagram.svg" alt="Instagram">
+  </a>
+</div>
     </div>
-    <p class="footer-copy">Cátedra Wischñevsky - 2026</p>
+    </div>
+    <p class="footer-copy">Cátedra Wischñevsky — 2026</p>
   </footer>
 
 </body>
